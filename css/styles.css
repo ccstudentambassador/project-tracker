@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html, body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  display: block;
+}
+
+/* Navbar Styles */
+
+nav {
+  position: relative;
+  display: flex;
+  max-width: 100%;
+  background-color: #00aeef;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+nav img {
+  width: 30px;
+  height: auto;
+  padding-left: 2px;
+  padding-right: 2px;
+  /*filter: brightness(0) invert(1);*/
+}
+
+#logo-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#logo-wrapper span, .links span, footer span {
+  font-size: 45px;
+  font-weight: 900;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo-wrapper .logo:last-child span:last-child {
+  font-size: 35px;
+  margin-left: 15px;
+  padding-top: 3px;
+}
+
+.pages {
+  list-style: none;
+  display: flex;
+}
+
+/* Main Stlyes */
+
+.main-content {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 2%;
+}
+
+/* Project Styles */
+
+.project {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+.project-date, .project-requester {
+  display: inline;
+  color: rgba(0, 0, 0, .75);
+}
+
+.project-date::before {
+  content: 'Due: ';
+  font-weight: 900;
+}
+
+.project-requester::before {
+  content: 'Owner: ';
+  font-weight: 900;
+  padding-left: 5px;
+}
+
+.project-title {
+  font-size: 1.5em;
+}
+
+.project-status {
+  font-size: 1.2em;
+}
+
+.project-status::after {
+  content: '';
+  position: absolute;
+  background-color: #fce8b2;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.project-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.project-initials::before {
+  content: 'Initials: ';
+  font-weight: 900;
+  color: rgba(0, 0, 0, .75);
+}
+
+.project-buttons {
+  margin-top: -20px;
+  text-align: right;
+}
+
+.project-buttons button {
+  padding: 10px;
+  border-radius: 5px
+}
+
+.project-buttons button:first-child {
+  background-color: #e37268;
+  border: 2px solid #e37268;
+}
