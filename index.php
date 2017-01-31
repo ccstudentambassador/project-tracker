@@ -45,29 +45,6 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.2.0/js/mdb.min.js" charset="utf-8"></script>
     <script type="text/javascript">
-      var project = {
-        "date": "1/31/2017",
-        "description": "This is a description",
-        "initials": "MF, DV, CT",
-        "name": "Mega Walk 2.0",
-        "notes": "Not done",
-        "owner": "Veronica Lewis",
-        "status": 0
-      }
-      $("#approval").click(function(){
-        console.log("Click");
-        $.ajax({
-  				url: "https://api.mongolab.com/api/1/databases/projects/collections/projects?apiKey=61N67c8_8YDZElxIRJADXPbmhp2PjD0t",
-  				type: "POST",
-  				data: JSON.stringify( project ),
-  				contentType: "text/plain",
-          xhrFields: {
-            withCredentials: false
-          }
-  			}).done(function( msg ) {
-  				console.log(msg);
-  			});
-      });
     </script>
   </body>
 </html>
